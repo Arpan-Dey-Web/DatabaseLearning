@@ -186,3 +186,89 @@ Candidate Keys:
 • → ⇒ ➤ ➜ ⮞
 ✓ ✔
 ✦ ✧ ❖ ◆ ◈
+
+## Alternative Key (অল্টারনেটিভ কি)
+
+একটি টেবিলে যতগুলো Candidate Key থাকে, তার মধ্য থেকে Primary Key নির্বাচন করার পর বাকি Candidate Key-গুলোকে Alternative Key বলা হয়।
+
+Primary Key ছাড়া অন্যান্য সব Candidate Key = Alternative Key
+
+### উদাহরণ
+
+| user_id | email | phone | name |
+| ------- | ----- | ----- | ---- |
+
+Candidate Keys:
+
+* user_id
+* email
+* phone
+
+Primary Key: user_id
+
+Alternative Keys:
+
+* email
+* phone
+
+### বৈশিষ্ট্য
+
+* Alternative Key সর্বদাই একটি Candidate Key
+* Alternative Key কখনোই Primary Key নয়
+* প্রতিটি Alternative Key রোকে ইউনিকভাবে শনাক্ত করতে পারে
+* এক টেবিলে Alternative Key একাধিক থাকতে পারে
+
+---
+
+## Composite Key (কম্পোজিট কি)
+
+Composite Key হলো এমন একটি Key যা একটি কলাম দিয়ে ইউনিক হয় না, বরং একাধিক কলাম মিলিয়ে রোকে ইউনিকভাবে শনাক্ত করে।
+
+Composite Key = একাধিক অ্যাট্রিবিউটের সমন্বয় যা ইউনিক শনাক্তকারী হিসেবে কাজ করে।
+
+### কেন Composite Key ব্যবহার করা হয়
+
+* যখন টেবিলের কোন একক কলামে ইউনিক ভ্যালু নেই
+* যখন দুটির বেশি কলাম একসাথে মিললে রো ইউনিক হয়
+* Many to Many সম্পর্ক match করতে (junction table)
+
+### উদাহরণ
+
+Table: ENROLLMENTS
+Columns: student_id, course_id, enrolled_date
+
+Composite Key:
+
+* (student_id, course_id)
+
+Reason:
+A student can enroll in multiple courses, and each course has multiple students. But the combination of student_id and course_id সর্বদাই ইউনিক।
+
+---
+
+## Simple Key (সিম্পল কি)
+
+Simple Key হলো এমন Candidate Key বা Primary Key যা একটি মাত্র কলাম দিয়ে গঠিত।
+অর্থাৎ, single attribute দিয়েই রোকে ইউনিকভাবে শনাক্ত করা যায়।
+
+### উদাহরণ
+
+| emp_id | email | phone | name |
+| ------ | ----- | ----- | ---- |
+
+Simple Keys:
+
+* emp_id
+* email
+* phone
+
+প্রতিটি একাই একটি রো ইউনিক করতে পারে, তাই এগুলো Simple Key।
+
+Primary Key: emp_id (Simple Key)
+Alternative Keys: email, phone (এগুলিও Simple Key)
+
+### বৈশিষ্ট্য
+
+* Simple Key সর্বদাই single attribute
+* এটি Candidate Key অথবা Primary Key হতে পারে
+* এক টেবিলে একাধিক Simple Key থাকতে পারে
