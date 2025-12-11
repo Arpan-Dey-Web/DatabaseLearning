@@ -269,4 +269,27 @@ Alternative Keys: email, phone (এগুলিও Simple Key)
 
 
 ## Foreign key?
-"hello world"
+Foreign Key হলো এমন একটি কলাম বা কলামের সেট যা একটি টেবিলের রেকর্ডকে অন্য একটি টেবিলের Primary Key (বা Unique Key) এর সাথে যুক্ত করে।
+Foreign Key ব্যবহার করা হয় দুই টেবিলের মধ্যে সম্পর্ক (relationship) তৈরি করতে এবং ডেটার রেফারেনশিয়াল ইন্টেগ্রিটি বজায় রাখতে।
+
+সহজভাবে:
+Foreign Key = অন্য টেবিলের Primary Key রেফার করে এমন কী
+
+উদাহরণ
+ধরো দুটি টেবিল আছে:
+1. students টেবিল
+
+| student_id (PK) | name  |
+| --------------- | ----- |
+| 1               | Arpan |
+| 2               | Raj   |
+| 3               | Mira  |
+
+
+2. enrollments টেবিল
+
+| enroll_id | student_id (FK) | course  |
+| --------- | --------------- | ------- |
+| 101       | 1               | Math    |
+| 102       | 2               | Physics |
+| 103       | 1               | English |
