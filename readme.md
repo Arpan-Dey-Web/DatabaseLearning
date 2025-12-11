@@ -293,3 +293,14 @@ Foreign Key = অন্য টেবিলের Primary Key রেফার ক
 | 101       | 1               | Math    |
 | 102       | 2               | Physics |
 | 103       | 1               | English |
+
+এখানে:
+
+✔ tudents.student_id হলো Primary Key
+✔ enrollments.student_id হলো Foreign Key, যা students.student_id কে রেফার করছে
+অর্থাৎ, একজন student কোন কোন course এ ভর্তি হয়েছে তা Foreign Key দিয়ে জানা যায়।
+## Foreign Key কী কাজ করে
+✔ দুই টেবিলের মধ্যে সম্পর্ক তৈরি করে
+✔ ভুল ডেটা ঢোকা বন্ধ করে
+✔ এমন student_id insert হতে দেয় না যা students টেবিলে নেই
+✔ delete/update করলে relationship বজায় থাকে (CASCADE rules)
