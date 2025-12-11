@@ -181,12 +181,6 @@ Candidate Keys:
 
 ---
 
-### Useful Symbols
-
-• → ⇒ ➤ ➜ ⮞
-✓ ✔
-✦ ✧ ❖ ◆ ◈
-
 ## Alternative Key (অল্টারনেটিভ কি)
 
 একটি টেবিলে যতগুলো Candidate Key থাকে, তার মধ্য থেকে Primary Key নির্বাচন করার পর বাকি Candidate Key-গুলোকে Alternative Key বলা হয়।
@@ -272,3 +266,7 @@ Alternative Keys: email, phone (এগুলিও Simple Key)
 * Simple Key সর্বদাই single attribute
 * এটি Candidate Key অথবা Primary Key হতে পারে
 * এক টেবিলে একাধিক Simple Key থাকতে পারে
+
+
+## Foreign key?
+"hello world"
