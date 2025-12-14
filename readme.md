@@ -320,6 +320,14 @@ Foreign Key = অন্য টেবিলের Primary Key রেফার ক
  3. Realationships among entities
  4. Resolving many to many Relationship (try to avoid many to many relationship in database connection)
 
+## Relationship Cordinality
+1. One to One (1:1)
+2. One to Many (1:N)
+3. Many to One (N:1)
+4. Many to Many (N:N)
+
+
+
 
 
  
