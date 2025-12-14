@@ -327,6 +327,13 @@ Foreign Key = অন্য টেবিলের Primary Key রেফার ক
 4. Many to Many (N:N)
 
 
+## Anomalies 
+Anomalies in databases refer to inconsistencies or unexpected issues that can occur during data manipulation or retrieval
+**There are 3 main types of Anomalies**
+* update anomalies
+* delete anomalies
+* insert anomalies
+
 
 
 
