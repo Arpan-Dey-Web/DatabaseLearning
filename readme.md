@@ -1,4 +1,4 @@
-## ******************************************** Database Model Design Module ********************************************
+## Database Model Design Module
 
 ### What is a Database?
 
@@ -299,8 +299,27 @@ Foreign Key = অন্য টেবিলের Primary Key রেফার ক
 ✔ tudents.student_id হলো Primary Key
 ✔ enrollments.student_id হলো Foreign Key, যা students.student_id কে রেফার করছে
 অর্থাৎ, একজন student কোন কোন course এ ভর্তি হয়েছে তা Foreign Key দিয়ে জানা যায়।
+ 
 ## Foreign Key কী কাজ করে
 ✔ দুই টেবিলের মধ্যে সম্পর্ক তৈরি করে
 ✔ ভুল ডেটা ঢোকা বন্ধ করে
 ✔ এমন student_id insert হতে দেয় না যা students টেবিলে নেই
 ✔ delete/update করলে relationship বজায় থাকে (CASCADE rules)
+
+-----------------------------------------------------------------------------------------------------
+
+## Database Design process
+## SDLC => SOFTWARE DEVELOPMENT LIFE CYCLE 
+
+**Planning** **Analysis** **System Design** **Building** **Testing** **Deployment**
+=> i have to move always step by step
+
+## Database Design steps 
+ 1. Determine Entities
+ 2. Determining attributes for each entities
+ 3. Realationships among entities
+ 4. Resolving many to many Relationship (try to avoid many to many relationship in database connection)
+
+
+
+ 
