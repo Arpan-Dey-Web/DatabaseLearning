@@ -335,6 +335,11 @@ Anomalies in databases refer to inconsistencies or unexpected issues that can oc
 * insert anomalies
 
 
+-------------------------------------------------------------------------------------------
 
+**DATABASE NORMALIZATION**
+
+ 1. Functional Dependency (Functional Dependency বোঝায় একটি টেবিলে এক বা একাধিক attribute অন্য একটি attribute কে uniquely determine করে।)
+ 2. Normal Forms 
 
  
