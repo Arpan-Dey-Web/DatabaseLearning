@@ -342,4 +342,34 @@ Anomalies in databases refer to inconsistencies or unexpected issues that can oc
  1. Functional Dependency (Functional Dependency বোঝায় একটি টেবিলে এক বা একাধিক attribute অন্য একটি attribute কে uniquely determine করে।)
  2. Normal Forms 
 
- 
+**Normal Forms**
+-----------------------------------------------------------------------------------------------
+4 types of normal forms here
+----------------------------------------------------------------------------------------------- 
+1. 0NF
+
+2. 1NF
+## 0NF Rules
+* Atomic Values
+* unique column names
+* positional dependancy of data
+* column should contain data that are or the same type 
+* determine primary key
+
+3. 2NF
+
+## 2NF Rules
+* Must be 1NF
+* no non-key attribute should depend on part of a candidate key
+
+4. 3NF
+
+## 3NF Rules
+* must be 2NF
+* must not contain transitive dependancy
+
+
+
+## Resolving Many to Many connection
+
+
